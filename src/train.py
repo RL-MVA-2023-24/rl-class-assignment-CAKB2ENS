@@ -15,7 +15,7 @@ class ProjectAgent:
     def load(self):
         # import os
         # import torch
-        self.model = torch.load(os.path.join(os.getcwd(),'Model_v1_PatientRef_E500.pth'), map_location=self.device)
+        self.model = torch.load(os.path.join(os.getcwd(),'src','Model_v1_PatientRef_E500.pth'), map_location=self.device)
 
     def greedy_action(self, observation):
         # import torch
